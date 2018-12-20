@@ -32,16 +32,16 @@ int main(int argc, char *argv[]) {
 	memset(&server_address, 0, sizeof(server_address));
 	server_address.sin_family = AF_INET;
 
-    // socket address used to store client address
-	struct sockaddr_in client_address;
-    socklen_t client_address_len = sizeof(client_address);
-
-	// htons: host to network short: transforms a value in host byte
+    // htons: host to network short: transforms a value in host byte
 	// ordering format to a short value in network byte ordering format
 	server_address.sin_port = htons(SERVER_PORT);
 
 	// htonl: host to network long: same as htons but to long
 	server_address.sin_addr.s_addr = htonl(SERVER_ADDRES);
+
+    // socket address used to store client address
+	struct sockaddr_in client_address;
+    socklen_t client_address_len = sizeof(client_address);
 
 	// create a TCP socket, creation returns -1 on failure
 	if ((server_fd = socket(PF_INET, SOCK_STREAM, 0)) < 0) {
