@@ -25,3 +25,5 @@ https://github.com/gympi/echo-server-examples/blob/master/src/echo-server/echo-s
 https://gist.github.com/suyash/2488ff6996c98a8ee3a84fe3198a6f85
 
 https://github.com/kklis/proxy/blob/master/proxy.c
+
+https://www.youtube.com/watch?v=BIJGSQEipEE&t=625s
